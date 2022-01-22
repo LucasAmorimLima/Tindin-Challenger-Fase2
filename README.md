@@ -76,7 +76,7 @@ After cloning & setting up the local project you can push the changes to your gi
 1. Express
   
  Express is a minimaland flexible framework for node .js web application that provides a robust set of features for web and mobile applications.
-  It is simple to use and fulfil the requirements for a web api, it's also possible to find some more advanced features, but there are some cases thats Express is requested
+  It is simple to use and fulfil the requirements for a web api, it's also possible to find some more advanced features, but there are some cases thats Express is requested.
   
 2. Mongoose
 
@@ -89,21 +89,30 @@ After cloning & setting up the local project you can push the changes to your gi
   
 4. lodash
 
-  Is a library for handling arrays, I like to use it because array operations become more concise and avoid additional code
+  Is a library for handling arrays, I like to use it because array operations become more concise and avoid additional code.
   
 5. Swagger
 
   Simplify API development for users, teams, and enterprises with the Swagger open source and professional toolset. Find out how Swagger can help you design and document your APIs at scale.
-  I use it because it is an efficient way to assemble a documentation and can also do tests, check types of returns, among other features
+  I use it because it is an efficient way to assemble a documentation and can also do tests, check types of returns, among other features.
   
 6. Jest
 
-  Jest is a test library that can be used in conjunction with other utilities such as supertest to perform http requests
+  Jest is a test library that can be used in conjunction with other utilities such as supertest to perform http requests.
   
 7. Typescript
 
   TypeScript is a superset of JavaScript, that is, a set of tools and more efficient ways to write JavaScript code, adding features that are not natively present in the language.
+  
+8. Joi
 
+ Joi serves to validate endpoints in a more secure and concise way, abstracting the responsibility of writing validation logics, such as an email or CPF.
+    
+9. Axios
+
+ Axios is a lightweight HTTP client based on the $http service inside Angular.js v1.x and is similar to JavaScript's native Fetch API.
+ Axios is promise-based, which gives you the ability to leverage JavaScript's async and await for more readable asynchronous code.
+    
 ## Swagger
 
 Once the application is started, you can see the documentation produced in swagger by the endpoint http://localhost/3333/api-docs
@@ -115,6 +124,14 @@ Once the application is started, you can make the test of application running th
 ```
 npm test
 ```
+
+## Integration with unsplash
+
+First I tried to integrate with Libraries & SDKs available by unsplash
+(https://github.com/unsplash/unsplash-js)
+,but as the project was developed in typescript some errors arose because the integration is not 100%
+(https://github.com/unsplash/unsplash-js/issues/186)
+,So I decided to make the connection with the axios library, after all at the end of the process it is still a formatted endpoint, at first I felt a little difficult to manage the access key, but I managed to do the integration.
 
 ## Insomnia 
 
